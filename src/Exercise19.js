@@ -13,9 +13,9 @@ function showAdditional(additional) {
 
 const Exercise19 = () => {
   return (
-    <div style={{ padding: '20px' }}> {/* Thêm padding cho dễ nhìn */}
+    <div style={{ padding: '20px' }}> 
       <h1>Animals</h1>
-      <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', justifyContent: 'center' }}> {/* Căn giữa các card */}
+      <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', justifyContent: 'center' }}> 
         {animals.map((animal) => (
           <AnimalCard
             key={animal.name}
@@ -25,7 +25,7 @@ const Exercise19 = () => {
             diet={animal.diet}
             additional={animal.additional}
             showAdditional={showAdditional}
-            image={animal.image} // Cần thêm dòng này để truyền ảnh
+            image={animal.image} 
           />
         ))}
       </div>
